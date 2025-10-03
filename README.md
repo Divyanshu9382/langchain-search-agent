@@ -36,7 +36,7 @@ Follow these steps to get the project running on your local machine.
 git clone [https://github.com/Divyanshu9382/langchain-search-agent.git](https://github.com/Divyanshu9382/langchain-search-agent.git)
 cd langchain-search-agent
 ```
-2. Create and Activate a Virtual Environment
+#### 2. Create and Activate a Virtual Environment
 
 
 
@@ -50,7 +50,7 @@ uv venv
 # Activate the environment (for Windows PowerShell)
 .venv\Scripts\activate
 
-3. Install Dependencies
+#### 3. Install Dependencies
 
 
 Install all the necessary packages from the requirements.txt file.
@@ -61,7 +61,7 @@ uv pip install -r requirements.txt
 (If you don't have a requirements.txt file, you can create one by running uv pip freeze > requirements.txt after installing the required packages.)
 
 ⚙️ Configuration
-1. Local LLM Setup (Default)
+## 1. Local LLM Setup (Default)
 
 
 This agent is configured to use a local LLM with Ollama.
@@ -70,12 +70,13 @@ Install Ollama from ollama.com.
 
 Download a model for the agent to use:
 
-Bash
+
 
 ollama pull llama3.1:latest
+
 Ensure the Ollama application is running in the background before starting the script.
 
-2. API Keys
+## 2. API Keys
 
 
 The agent's search tool requires an API key.
@@ -87,7 +88,8 @@ Get a free API key from the Tavily AI website.
 Add your key to the .env file:
 
 TAVILY_API_KEY="tvly-YourTavilyApiKeyGoesHere"
-3. Alternative Configuration (Cloud APIs)
+
+## 3. Alternative Configuration (Cloud APIs)
 
 
 You can easily switch to a cloud-based model by modifying main.py.
